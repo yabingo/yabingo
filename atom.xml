@@ -6,7 +6,7 @@
   <link href="https://yabingo.cn/atom.xml" rel="self"/>
   
   <link href="https://yabingo.cn/"/>
-  <updated>2020-11-19T01:22:50.785Z</updated>
+  <updated>2020-11-20T03:34:04.821Z</updated>
   <id>https://yabingo.cn/</id>
   
   <author>
@@ -15,6 +15,23 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>音视频编解码工具ffmpeg</title>
+    <link href="https://yabingo.cn/2020/11/20/ffmpeg/"/>
+    <id>https://yabingo.cn/2020/11/20/ffmpeg/</id>
+    <published>2020-11-20T03:33:26.000Z</published>
+    <updated>2020-11-20T03:34:04.821Z</updated>
+    
+    
+    
+    
+    
+    <category term="tools" scheme="https://yabingo.cn/tags/tools/"/>
+    
+    <category term="code" scheme="https://yabingo.cn/tags/code/"/>
+    
+  </entry>
   
   <entry>
     <title>增长黑客</title>
