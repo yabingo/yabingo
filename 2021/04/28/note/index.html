@@ -6,19 +6,18 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://yabingo.cn">
-  <title>博客搭建记录 | yabingo</title>
+  <title>学习笔记 | yabingo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="插件安装文章字数统计与阅读时长1.安装hexo-wordcount插件 1npm i --save hexo-wordcount">
+  <meta name="description" content="1.实现接口幂等性的几种方案什么是幂等幂等原先是数学中的一个概念，表示进行1次变换和进行N次变换产生的效果相同。 接口幂等性是指以相同的请求调用这个接口一次和调用这个接口多次，对系统产生的影响是相同的。比如抢红包接口就是一个非常典型的幂等接口，抢一次和抢多次具有一样的效果。 什么情况下需要幂等并不是所有接口都需要保证幂等性。以相同的请求调用这个接口一次或多次，需要给调用方返回一致的结果时，就要考虑">
 <meta property="og:type" content="article">
-<meta property="og:title" content="博客搭建记录">
-<meta property="og:url" content="https://yabingo.cn/2020/11/17/blog-building-log/index.html">
+<meta property="og:title" content="学习笔记">
+<meta property="og:url" content="https://yabingo.cn/2021/04/28/note/index.html">
 <meta property="og:site_name" content="yabingo">
-<meta property="og:description" content="插件安装文章字数统计与阅读时长1.安装hexo-wordcount插件 1npm i --save hexo-wordcount">
+<meta property="og:description" content="1.实现接口幂等性的几种方案什么是幂等幂等原先是数学中的一个概念，表示进行1次变换和进行N次变换产生的效果相同。 接口幂等性是指以相同的请求调用这个接口一次和调用这个接口多次，对系统产生的影响是相同的。比如抢红包接口就是一个非常典型的幂等接口，抢一次和抢多次具有一样的效果。 什么情况下需要幂等并不是所有接口都需要保证幂等性。以相同的请求调用这个接口一次或多次，需要给调用方返回一致的结果时，就要考虑">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2020-11-17T04:22:22.000Z">
-<meta property="article:modified_time" content="2020-11-18T02:23:42.615Z">
+<meta property="article:published_time" content="2021-04-28T07:43:22.000Z">
+<meta property="article:modified_time" content="2021-04-29T10:09:36.061Z">
 <meta property="article:author" content="yabingo">
-<meta property="article:tag" content="tools">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="yabingo" type="application/atom+xml">
@@ -155,42 +154,35 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-blog-building-log" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-note" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      博客搭建记录
+      学习笔记
     </h1>
   
 
         
-        <a href="/2020/11/17/blog-building-log/" class="archive-article-date">
-  	<time datetime="2020-11-17T04:22:22.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-11-17</time>
+        <a href="/2021/04/28/note/" class="archive-article-date">
+  	<time datetime="2021-04-28T07:43:22.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-04-28</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="插件安装"><a href="#插件安装" class="headerlink" title="插件安装"></a>插件安装</h2><h3 id="文章字数统计与阅读时长"><a href="#文章字数统计与阅读时长" class="headerlink" title="文章字数统计与阅读时长"></a>文章字数统计与阅读时长</h3><p>1.安装hexo-wordcount插件</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i --save hexo-wordcount</span><br></pre></td></tr></table></figure>
+        <h2 id="1-实现接口幂等性的几种方案"><a href="#1-实现接口幂等性的几种方案" class="headerlink" title="1.实现接口幂等性的几种方案"></a>1.实现接口幂等性的几种方案</h2><h3 id="什么是幂等"><a href="#什么是幂等" class="headerlink" title="什么是幂等"></a>什么是幂等</h3><p>幂等原先是数学中的一个概念，表示进行1次变换和进行N次变换产生的效果相同。</p>
+<p>接口幂等性是指以相同的请求调用这个接口一次和调用这个接口多次，对系统产生的影响是相同的。比如抢红包接口就是一个非常典型的幂等接口，抢一次和抢多次具有一样的效果。</p>
+<h3 id="什么情况下需要幂等"><a href="#什么情况下需要幂等" class="headerlink" title="什么情况下需要幂等"></a>什么情况下需要幂等</h3><p>并不是所有接口都需要保证幂等性。以相同的请求调用这个接口一次或多次，需要给调用方返回一致的结果时，就要考虑将这个接口设计成幂等接口。<br>查询和删除操作天然支持幂等</p>
+<h3 id="实现幂等的几种方案"><a href="#实现幂等的几种方案" class="headerlink" title="实现幂等的几种方案"></a>实现幂等的几种方案</h3><ul>
+<li>来源加序号</li>
+<li>唯一索引（唯一字段）</li>
+<li>乐观锁：<code>update table_xxx set name=#name#, timestamp = now where id=#id# and timestamp=#timestamp#</code> –这个值由前端到数据中查询出来，再传过来</li>
+</ul>
 
-<a id="more"></a>
-
-<p>2.安装hexo-symbols-count-time</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-symbols-count-time --save</span><br></pre></td></tr></table></figure>
-
-<p>3.安装eslint</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install eslint --save</span><br></pre></td></tr></table></figure>
-
-<p>4.在站点配置文件添加如下配置</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">symbols_count_time:</span><br><span class="line">  symbols: <span class="literal">true</span>                <span class="comment"># 文章字数统计</span></span><br><span class="line">  time: <span class="literal">true</span>                   <span class="comment"># 文章阅读时长</span></span><br><span class="line">  total_symbols: <span class="literal">true</span>          <span class="comment"># 站点总字数统计</span></span><br><span class="line">  total_time: <span class="literal">true</span>             <span class="comment"># 站点总阅读时长</span></span><br><span class="line">  exclude_codeblock: <span class="literal">false</span>     <span class="comment"># 排除代码字数统计</span></span><br></pre></td></tr></table></figure>
-
-<p>5.在主题配置下添加如下配置</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">symbols_count_time:</span><br><span class="line">  separated_meta: true     # 是否另起一行（true的话不和发表时间等同一行）</span><br><span class="line">  item_text_post: true     # 首页文章统计数量前是否显示文字描述（本文字数、阅读时长）</span><br><span class="line">  item_text_total: false   # 页面底部统计数量前是否显示文字描述（站点总字数、站点阅读时长）</span><br><span class="line">  awl: 4                   # Average Word Length</span><br><span class="line">  wpm: 275                 # Words Per Minute（每分钟阅读词数）</span><br><span class="line">  suffix: mins.</span><br><span class="line"></span><br><span class="line">post_wordcount: 		# 字数统计</span><br><span class="line">  item_text: true		# 是否显示文字</span><br><span class="line">  wordcount: true		# 显示字数</span><br><span class="line">  min2read: true		# 显示阅读时间</span><br><span class="line">  totalcount: true		# 显示总数</span><br><span class="line">  separated_meta: true	# 是否分开</span><br></pre></td></tr></table></figure>
       
 
       
@@ -219,17 +211,6 @@
     <div class="article-info article-info-index">
       
       
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">tools</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
       
 
       
@@ -280,7 +261,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACI0lEQVR42u3aQY7DIAwF0N7/0pntSKPQb0NGCjxWVdIUXhauwf584nH9Gn+v5NfzZz9PDAwMjNcyruEYM2Zm+Xs3Ad9SMTAwDmDcTTz+6eRuErirLwsDAwNjzMiv5MliPi8GBgZGL+COn5oJ1hgYGBjVTWxv+9rbrD64F8fAwHghY3765z4/Ut/AwMB4FeMqjmoQzIuU18TAwMDYm5EHuHyhvcCdbKq/zIuBgXEA439GvmUtFyEwMDC2ZsyULcfL6h2rza8HAwNjJ8aqNovxN5PCZEKNwisGBsamjFWH9XlrRbLEZpsFBgbGdozqJnb8/bzCWE0Hy2EXAwNjI0ayKc3Tvjyw9kqbt38DGBgYBzCSBeVtFskrqEbOL4EYAwNja0Y+eongzG/mh3cYGBgnMPIEsdooVi08VEsOGBgYpzGqZcVq5M6LEM0rGBgYWzPyjeVMy+kMeCYBxcDA2IMxf6DfOxqrbmKjZgsMDIytGb2WiCShnJkrXw8GBsYJjGog7h2ZJU/lpcrb1BADA2NrRrWFKw+O1VdQTVIxMDDOYeSHZatSw5mGDwwMjBMYV3GsKnlW7355QRgYGFsz1pYVk/C9tmmsjMHAwHgtY9VWM0nmeilgVMjEwMA4gFENfNWDuWorRhmJgYGBERQAekdsvZJnlJNiYGBgxC1fveaw8i9jYGAcwOgVA5LAOv9sdPyHgYGxNSPfOvY+9xYxPwsGBsYWjB/692qYt/pQ4wAAAABJRU5ErkJggg==" alt="微信分享二维码">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAK4AAACuCAAAAACKZ2kyAAAByklEQVR42u3awWrDMBAE0Pz/T7fQU6HYmdHaigtPJ2Ob+CmHQdrV6xWPr5/x9/r3nd/j6OnRnYsHLi7umPt1Oo64R6zzSSa/eT55XFzcndwkvHJoEmHn4Xh4HxcX92Hcdr2RRBsuLu5/5+aRNKHj4uI+h5tsftpgmix9Ltir4eLiDriTgulV15vqu7i4uOOuxAWBUpZa3nwdFxd3CzdpgeTN1BzaNlqKH8LFxR1z801Igs7D6HyqbyIMFxf3Zu55SuTvJKC8UBIFKy4u7s3cyfGpqyoYxVdwcXFv5ibhMom5fMMTRSQuLu5G7trRq7ak0hZPi34OLi7udm679FlrptaVXVxc3Ju57ZGsq6KtnjwuLu4DuJPma75xKiaDi4u7kZufcMhbre0xrIiOi4u7hbtWyEjirA27olCLi4t7M3fSLq2PUpVLJVxc3M9y18oZkw3SKx64uLif4rYHpxJE0kBt4w8XF3cPtw2UJPLWyq/tU1xc3Lu5a6XMtkHbBhkuLu4TuG2dNY+zZGt0/g4uLu6TuWtrpbUC6+FTXFzcR3In5ZW8UHL4XVxc3I3c/ANrjdK1v2C0V8PFxR1w24LpWou03Qjh4uJ+iPsNZDAGHCF7PMwAAAAASUVORK5CYII=" alt="微信分享二维码">
     </div>
 </div>
 
@@ -294,18 +275,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2020/11/17/code-snippet/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          代码片段
-        
-      </div>
-    </a>
   
-  
-    <a href="/2020/11/17/this-is-my-first-post/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">This is my first post</div>
+    <a href="/2021/04/20/php-unit-test/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">PHP单元测试</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -324,19 +296,6 @@
             </div>
         </div>
         
-        
-        <div class="toc-container tooltip-left">
-            <i class="icon-font icon-category"></i>
-            <div class="tooltip tooltip-east">
-                <span class="tooltip-item">
-                </span>
-                <span class="tooltip-content">
-                    <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8F%92%E4%BB%B6%E5%AE%89%E8%A3%85"><span class="toc-number">1.</span> <span class="toc-text">插件安装</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%87%E7%AB%A0%E5%AD%97%E6%95%B0%E7%BB%9F%E8%AE%A1%E4%B8%8E%E9%98%85%E8%AF%BB%E6%97%B6%E9%95%BF"><span class="toc-number">1.1.</span> <span class="toc-text">文章字数统计与阅读时长</span></a></li></ol></li></ol>
-                    </div>
-                </span>
-            </div>
-        </div>
         
     </div>
 </aside>
