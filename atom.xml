@@ -6,7 +6,7 @@
   <link href="https://yabingo.cn/atom.xml" rel="self"/>
   
   <link href="https://yabingo.cn/"/>
-  <updated>2021-04-29T10:09:36.061Z</updated>
+  <updated>2022-06-24T13:28:42.223Z</updated>
   <id>https://yabingo.cn/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>今日阅读</title>
+    <link href="https://yabingo.cn/2022/06/24/daily-reading/"/>
+    <id>https://yabingo.cn/2022/06/24/daily-reading/</id>
+    <published>2022-06-24T13:08:52.000Z</published>
+    <updated>2022-06-24T13:28:42.223Z</updated>
+    
+    <content type="html"><![CDATA[<ul><li>6.24 <a href="https://www.cnblogs.com/jackson0714/p/16407233.html?utm_source=gold_browser_extension">一次 MySQL 误操作导致的事故，高可用都顶不住了！</a><ul><li>mysql 主从同步原理，根据主库上 mysql-bin.xxxxx 文件和 Position 设置从库配置，设置时主库锁表，设置完成后开启同步再解锁表</li><li>mysql log 文件和数据库 data 文件进行隔离，如：<ul><li>datadir = /var/lib/mysql/data</li><li>log_bin = /var/lib/mysql/log</li></ul></li></ul></li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;6.24 &lt;a href=&quot;https://www.cnblogs.com/jackson0714/p/16407233.html?utm_source=gold_browser_extension&quot;&gt;一次 MySQL 误操作导致的事故，高可用都顶不住了！&lt;/a</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>学习笔记</title>
